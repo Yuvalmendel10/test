@@ -6,6 +6,7 @@ pipeline {
         stage('Hello') {
             steps {
               bat 'echo %TIME%'
+              bat 'echo %TIME%'
             }
         }
     }
