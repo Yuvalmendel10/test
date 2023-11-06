@@ -1,2 +1,12 @@
-git clone https://github.com/Yuvalmendel10/test.git
-dir test
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+              bat 'echo %TIME%'
+            }
+        }
+    }
+}
+
